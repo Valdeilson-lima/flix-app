@@ -6,7 +6,7 @@ from login.service import logout
 class MovieRepository:
 
     def __init__(self):
-        self.__base_url = 'http://35.184.34.233:8000/api/v1/'
+        self.__base_url = 'http://35.184.34.233/api/v1/'
         self.__movies_url = f'{self.__base_url}movies/'
         self.__headers = {
             'Authorization': f'Bearer {st.session_state.get("token", "")}'

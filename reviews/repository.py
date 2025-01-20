@@ -6,7 +6,7 @@ from login.service import logout
 class ReviewRepository:
 
     def __init__(self):
-        self.__base_url = 'http://35.184.34.233:8000/api/v1/'
+        self.__base_url = 'http://35.184.34.233/api/v1/'
         self.__reviews_url = f'{self.__base_url}reviews/'
         self.__headers = {
             'Authorization': f'Bearer {st.session_state.token}'
